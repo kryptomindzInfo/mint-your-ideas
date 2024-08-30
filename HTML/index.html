@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Mint Your Ideas - Trade Your Dreams</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="NFT Marketplace Website Template" />
+        <meta name="keywords" content="blockchain nft, collectibles, crypto, crypto art, crypto asset, crypto marketplace, digital, item, NFT, NFT assets, NFT Gaming, nft marketplace, token, wallet" />
+        <meta content="Shreethemes" name="author" />
+        <meta content="support@shreethemes.in" name="Email" />
+        <meta content="https://shreethemes.in/" name="Website" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./images/Mint logo.png">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/tiny-slider.css" rel="stylesheet" />
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+        <!-- Main css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    
+        <style>
+            *{
+                font-family:"Material Design Icons";
+            }
+            .logos{
+                object-fit: contain;
+            }
+            img.poster {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                object-fit: cover;
+                cursor: pointer;
+                background-color: black;
+            }
+            .tiny-slide .card {
+                width: 80%;
+                max-width: 600px;
+                margin: 0 auto; 
+            }
+            .Read-More{
+                display:none;
+            }
+            .ytp-title-text{
+                display:none;
+            }
+            .ytp-chrome-top,
+            .ytp-show-cards-title{
+                display:none;
+            }
+            .nft-img{
+                width:200px;
+                margin:0 auto;
+            }
+            .community-tab{
+                height:200px;
+                overflow-y: hidden;
+            }
+            .card .read-more-button{
+                text-align: center;
+                margin-top:5px;
+            }
+            .wrapper {
+                overflow: hidden;
+                max-width: 100%;
+            }
+            .frame-container {
+                position: relative;
+                padding-bottom: 56.25%;   
+                padding-top: 25px;
+                width: 300%;
+                left: -100%;
+            }
+            .frame-container iframe {
+                position:absolute; 
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+            }
+            .explore-products{
+                text-align:center;
+                padding-bottom:.5rem;
+                margin-bottom:1.5rem;
+            }
+
+            .how-it-works{
+                text-align:center;
+            }
+            .discover{
+                padding:0 80px;
+            }
+            .discover-detail{
+                padding:0 100px;
+            }
+            .video-frame{
+                transform: perspective(650px) rotateX(0deg) rotateY(-10deg);
+            }
+
+            @media(max-width:400px){
+                
+                .explore-products{
+                    text-align:left;
+                    padding-bottom:.5rem;
+                    margin-bottom:10px;
+                }
+                .how-it-works{
+                    text-align:left;
+                }
+                .bg-half-100{
+                    padding-top:50px !important;
+                }
+                .discover{
+                    padding:0 0px;
+                }
+                .discover-detail{
+                    padding:0 0px;
+                }
+                .title-heading .heading{
+                    font-size:26px !important;
+                }
+                .video-frame{
+                    transform: perspective(650px) rotateX(0deg) rotateY(0deg);
+                }
+            }
+        </style>
+    
+    </head>
+
+    <body>
+        <!-- Loader --> 
+         <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce1"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader
+
+         Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo Start-->
+                <a class="logo" href="index.html">
+                    <span class="logo-light-mode">
+                        <div class="logo-section">
+                            <img src="./images/nftify-header.png" height="26" class="l-dark logos" alt="">
+                        </div>
+                        <div class="logo-section">
+                            <img src="./images/nftify-header.png" height="26" class="l-light logos" alt="">
+                         </div>
+                    </span>
+                    <div class="logo-section">
+                        <img src="./images/nftify-header.png" height="40" width = "35" class="logo-dark-mode logos" alt="">
+                        <!-- <p class="logo-dark-mode">NFTify.ai</p> -->
+                    </div>
+                </a>
+                <!-- Logo end-->
+
+                <!-- Mobile -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+                <!-- Mobile -->
+
+                <!--Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown dropdown-primary">
+                            <button class="btn btn-pills bg-primary btn-outline-dark-white"><a href="signin.html" style="color:azure">Sign In</a></button>
+                        </div>
+                    </li>
+                    <li class="list-inline-item mb-0" style="margin-left:20px;">
+                        <div class="dropdown dropdown-primary">
+                           <button class = "btn btn-pills btn-outline-light"><a href="signup.html" style="font-weight:500;">Sign Up</a></button>
+                        </div>
+                    </li>
+                </ul>
+                <!--Login button End-->
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu nav-left nav-light">
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="">Home</a>
+                            <!-- <ul class="submenu megamenu">
+                                <li class="d-none d-lg-block">
+                                    <ul>
+                                         <li><img src="images/character.png" class="img-fluid" alt=""></li> 
+                                    </ul>
+                                </li>
+                            </ul> -->
+                        </li>
+                        
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="#contact">About us</a>
+                        </li>
+                        
+                        <li><a href="#how-it-works" class="sub-menu-item"> How it Works</a></li>
+
+                        <li><a href="#explore" class="sub-menu-item">Browse Ideas</a></li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="#contact">Contact Us</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Navbar End -->
+
+        <!-- Start Home -->
+        <section class="bg-half-170 d-table w-100" style="background-image: url('images/bg/bg01.png'); background-position: center center;">
+            <div class="bg-overlay bg-gradient-primary opacity-8"></div>
+            <div class="container p-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="title-heading">
+                            <h6 class="text-light title-dark fw-normal">Mint Your Ideas, Trade Your Dreams</h6>
+                            <h4 class="heading text-white title-dark fw-bold mb-3">Where Inspiration Meets  <br/> <span class="typewrite" data-period="2000" data-type='[ "Opportunity", "Innovation", "Creativity", "Monetization", "Imagination", "Exploration"]'></span></h4>
+                            <p class="text-white-50 para-desc mb-0 mb-0">Welcome to Mint Your Ideas, where creativity thrives and dreams take flight in our dynamic marketplace!</p>
+                            
+                            <div class="mt-4 pt-2">
+                                <a href="signin.html" class="btn btn-pills btn-outline-light-white">Discover Now</a>
+                            </div>
+                        </div>
+                        
+                    </div><!--end slide-->
+
+                    <div class="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div class="card bg-white nft-items nft-primary video-frame rounded-md shadow overflow-hidden mb-1">
+                            <div class="d-flex justify-content-between">
+                            </div>
+
+                            <div class="nft-image rounded-md position-relative overflow-hidden shadow">
+                                
+                            </div>
+
+                            <div class="card-body content position-relative p-0">
+                                <div class="wrapper">
+                                    <div class="frame-container">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q-R1kpgBffA?autoplay=0&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=0&amp;modestbranding=0&amp;byline=0&amp;title=&amp;autohide=1&amp;wmode=transparent&amp;hd=1" frameborder="0" title="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="object-fit:fill; width:100%;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>    
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Home -->
+
+        <!-- Start -->
+        <section id="explore" class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title explore-products">
+                            <h4 class="title mb-3">Explore Pioneering Ideas</h4>
+                            <p class="text-muted para-desc mb-0 mx-auto">We value the security of your ideas. Our platform is built on the sturdy pillars of blockchain technology, ensuring that your tokens are secure, and your intellectual property is safeguarded!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-2 mb-5">
+                    <div class="col filters-group-wrap">
+                        <div class="filters-group">
+                            <ul class="container-filter mb-0 categories-filter text-center list-unstyled filter-options">
+                                <li class="list-inline-item categories position-relative text-dark active" data-group="all"><i class="uil uil-browser"></i> All</li>
+                                <!-- <li class="list-inline-item categories position-relative text-dark" data-group="games"><i class="uil uil-volleyball"></i> Games</li>
+                                <li class="list-inline-item categories position-relative text-dark" data-group="art"><i class="uil uil-chart-pie-alt"></i> Art</li>
+                                <li class="list-inline-item categories position-relative text-dark" data-group="music"><i class="uil uil-music"></i> Music</li>
+                                <li class="list-inline-item categories position-relative text-dark" data-group="video"><i class="uil uil-camera-plus"></i> Video</li>
+                                <li class="list-inline-item categories position-relative text-dark" data-group="memes"><i class="uil uil-rocket"></i> Memes</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1 g-4" id="grid">
+                    <div class="col picture-item" data-groups='["games"]'>
+                        <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="img-group">
+                                    <a href="javascript:void(0)" class="user-avatar">
+                                        <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                </div>
+                                
+                                <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
+                            </div>
+
+                            <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                                <a href="detail.html"><img src="./images/collection/business.png" class="img-fluid" alt=""></a>
+                                <div class="position-absolute top-0 start-0 m-2">
+                                    
+                                </div>
+
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <a href="detail.html" class="btn btn-pills btn-icon"><i class="uil uil-shopping-cart-alt"></i></a>
+                                </div>
+
+                                <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
+                                    <i class="uil uil-clock"></i> <small id="auction-item-1" class="fw-bold"></small>
+                                </div>
+                            </div>
+
+                            <div class="card-body content position-relative p-0 mt-3">
+                                <a href="detail.html" class="title text-dark h6">AI Business Asistant</a>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small class="rate fw-bold">5 ETH</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col picture-item" data-groups='["games"]'>
+                        <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="img-group">
+                                    <a href="javascript:void(0)" class="user-avatar">
+                                        <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                </div>
+                                
+                                <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
+                            </div>
+
+                            <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                                <a href="detail.html"><img src="./images/collection/ai-survey.png" class="img-fluid" alt=""></a>
+                                <div class="position-absolute top-0 start-0 m-2">
+                                    
+                                </div>
+
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <a href="detail.html" class="btn btn-pills btn-icon"><i class="uil uil-shopping-cart-alt"></i></a>
+                                </div>
+
+                                <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
+                                    <i class="uil uil-clock"></i> <small id="auction-item-1" class="fw-bold"></small>
+                                </div>
+                            </div>
+
+                            <div class="card-body content position-relative p-0 mt-3">
+                                <a href="detail.html" class="title text-dark h6">AI Survey Metrix</a>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small class="rate fw-bold">52 ETH</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+
+                    <div class="col picture-item" data-groups='["games"]'>
+                        <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="img-group">
+                                    <a href="javascript:void(0)" class="user-avatar">
+                                        <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                </div>
+                                
+                                <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
+                            </div>
+
+                            <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                                <a href="detail.html"><img src="./images/collection/mint.png" class="img-fluid" alt=""></a>
+                                <div class="position-absolute top-0 start-0 m-2">
+                                    
+                                </div>
+
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <a href="detail.html" class="btn btn-pills btn-icon"><i class="uil uil-shopping-cart-alt"></i></a>
+                                </div>
+
+                                <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
+                                    <i class="uil uil-clock"></i> <small id="auction-item-1" class="fw-bold"></small>
+                                </div>
+                            </div>
+
+                            <div class="card-body content position-relative p-0 mt-3">
+                                <a href="detail.html" class="title text-dark h6">Mint Your Ideas</a>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small class="rate fw-bold">2.5 ETH</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+
+                    <div class="col picture-item" data-groups='["games"]'>
+                        <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="img-group">
+                                    <a href="javascript:void(0)" class="user-avatar">
+                                        <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                </div>
+                                
+                                <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
+                            </div>
+
+                            <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                                <a href="detail.html"><img src="./images/collection/notarized.png" class="img-fluid" alt=""></a>
+                                <div class="position-absolute top-0 start-0 m-2">
+                                    
+                                </div>
+
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <a href="detail.html" class="btn btn-pills btn-icon"><i class="uil uil-shopping-cart-alt"></i></a>
+                                </div>
+
+                                <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
+                                    <i class="uil uil-clock"></i> <small id="auction-item-1" class="fw-bold"></small>
+                                </div>
+                            </div>
+
+                            <div class="card-body content position-relative p-0 mt-3">
+                                <a href="detail.html" class="title text-dark h6">Notarized</a>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small class="rate fw-bold">21.5 ETH</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+
+                    <div class="col picture-item" data-groups='["games"]'>
+                        <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="img-group">
+                                    <a href="javascript:void(0)" class="user-avatar">
+                                        <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                </div>
+                                
+                                <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
+                            </div>
+
+                            <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                                <a href="detail.html"><img src="./images/collection/health.png" class="img-fluid" alt=""></a>
+                                <div class="position-absolute top-0 start-0 m-2">
+                                    
+                                </div>
+
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <a href="detail.html" class="btn btn-pills btn-icon"><i class="uil uil-shopping-cart-alt"></i></a>
+                                </div>
+
+                                <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
+                                    <i class="uil uil-clock"></i> <small id="auction-item-1" class="fw-bold"></small>
+                                </div>
+                            </div>
+
+                            <div class="card-body content position-relative p-0 mt-3">
+                                <a href="detail.html" class="title text-dark h6">Connected Health Platform</a>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small class="rate fw-bold">27.5 ETH</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+
+                    <div class="col picture-item" data-groups='["games"]'>
+                        <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="img-group">
+                                    <a href="javascript:void(0)" class="user-avatar">
+                                        <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                </div>
+                                
+                                <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
+                            </div>
+
+                            <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                                <a href="detail.html"><img src="./images/collection/alfred.png" class="img-fluid" alt=""></a>
+                                <div class="position-absolute top-0 start-0 m-2">
+                                    
+                                </div>
+
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <a href="detail.html" class="btn btn-pills btn-icon"><i class="uil uil-shopping-cart-alt"></i></a>
+                                </div>
+
+                                <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
+                                    <i class="uil uil-clock"></i> <small id="auction-item-1" class="fw-bold"></small>
+                                </div>
+                            </div>
+
+                            <div class="card-body content position-relative p-0 mt-3">
+                                <a href="detail.html" class="title text-dark h6">Trading Alfred</a>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small class="rate fw-bold">17 ETH</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+
+                    <div class="col picture-item" data-groups='["games"]'>
+                        <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="img-group">
+                                    <a href="javascript:void(0)" class="user-avatar">
+                                        <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                </div>
+                                
+                                <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
+                            </div>
+
+                            <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                                <a href="detail.html"><img src="./images/collection/security-copilot.png" class="img-fluid" alt=""></a>
+                                <div class="position-absolute top-0 start-0 m-2">
+                                    
+                                </div>
+
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <a href="detail.html" class="btn btn-pills btn-icon"><i class="uil uil-shopping-cart-alt"></i></a>
+                                </div>
+
+                                <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
+                                    <i class="uil uil-clock"></i> <small id="auction-item-1" class="fw-bold"></small>
+                                </div>
+                            </div>
+
+                            <div class="card-body content position-relative p-0 mt-3">
+                                <a href="detail.html" class="title text-dark h6">Security CoPilot</a>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small class="rate fw-bold">12 ETH</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+
+                    <div class="col picture-item" data-groups='["games"]'>
+                        <div class="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
+                            <div class="d-flex justify-content-between">
+                                <div class="img-group">
+                                    <a href="javascript:void(0)" class="user-avatar">
+                                        <img src="images/client/08.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/05.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                    <a href="javascript:void(0)" class="user-avatar ms-n3">
+                                        <img src="images/client/06.jpg" alt="user" class="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle">
+                                    </a>
+                                </div>
+                                
+                                <span class="like-icon shadow-sm"><a href="javascript:void(0)" class="text-muted icon"><i class="mdi mdi-18px mdi-heart mb-0"></i></a></span>
+                            </div>
+
+                            <div class="nft-image rounded-md mt-3 position-relative overflow-hidden nft-img">
+                                <a href="detail.html"><img src="./images/collection/fintech.png" class="img-fluid" alt=""></a>
+                                <div class="position-absolute top-0 start-0 m-2">
+                                    
+                                </div>
+
+                                <div class="position-absolute top-0 end-0 m-2">
+                                    <a href="detail.html" class="btn btn-pills btn-icon"><i class="uil uil-shopping-cart-alt"></i></a>
+                                </div>
+
+                                <div class="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3">
+                                    <i class="uil uil-clock"></i> <small id="auction-item-1" class="fw-bold"></small>
+                                </div>
+                            </div>
+
+                            <div class="card-body content position-relative p-0 mt-3">
+                                <a href="detail.html" class="title text-dark h6">Fintech CoPilot</a>
+
+                                <div class="d-flex justify-content-between mt-2">
+                                    <small class="rate fw-bold">2 ETH</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div id="how-it-works" class="container-fluid mt-100">
+                <div class="row px-0">
+                    <div class="bg-half-100 bg-gradient-primary">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <div class="section-title how-it-works mb-4 pb-2">
+                                        <h4 class="title text-white title-dark mb-4">How It Works</h4>
+                                        <p class="text-white-100 para-desc mb-0 mx-auto">Discover how Mint Your Ideas revolutionizes the world of NFTs:</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 mt-2 pt-2">
+                                    <div class="card p-4 rounded-md shadow bg-white">
+                                        <div class="discover">
+                                            <h4 class="mb-4">Discover the Process: How It Works</h4>
+                                            <p class="text-muted mb-0">Mint Your Ideas," refers to the process of transforming your unique concept or idea into a non-fungible token (NFT). In the world of digital assets and blockchain technology, minting refers to the creation of a new token or asset on a blockchain network.</p>
+                                            <div class="mt-3">
+                                                <a href="" class="btn btn-link primary text-dark read-more-1">Read More<i class="uil uil-arrow-right"></i></a>
+                                            </div>
+                                            <div class="py-4"></div>
+
+                                            <div class="how-it-works-detail Read-More">
+                                                <div class="mt-3 discover-detail">
+                                                    <h4 class="mb-2">Creation</h4>
+                                                    <p class="text-muted mb-0"> You take your original idea, whether it's a piece of artwork, a piece of music, a written work, or any other form of digital content, and convert it into a digital format suitable for blockchain representation.</p>
+                                                </div>
+                                                <div class="mt-5 discover-detail">
+                                                    <h4 class="mb-2">Tokenization</h4>
+                                                    <p class="text-muted mb-0">Once your idea is in a digital format, you tokenize it by creating a unique NFT on the blockchain. This NFT serves as a digital certificate of ownership, proving that you are the creator or owner of the idea</p>
+                                                </div>
+                                                <div class="mt-5 discover-detail">
+                                                    <h4 class="mb-2">Validation</h4>
+                                                    <p class="text-muted mb-0"> The minting process often involves validating the authenticity and uniqueness of your idea to ensure that it meets the standards of the NFT marketplace.</p>
+                                                </div>
+                                                <div class="mt-5 discover-detail">
+                                                    <h4 class="mb-2">Listing</h4>
+                                                    <p class="text-muted mb-0"> After minting your idea as an NFT, you can list it for sale or auction on the NFT marketplace associated with Mint Your Ideas. Other users can then purchase or bid on your NFT, effectively owning a digital representation of your idea.</p>
+                                                </div>
+                                                <div class="mt-5" style="padding:0 100px">
+                                                    <a href="" class="btn btn-link primary text-dark read-less">Read Less <i class="uil uil-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-12 mt-4 pt-2 Read-More">
+                                    <div class="card p-4 rounded-md shadow bg-white">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crousel -->
+
+            <div class="container" style="padding-top:100px; margin-bottom:20px;">
+                    <div class="row align-items-end mb-4 pb-2">
+                        <div class="col-md-12">
+                            <div class="section-title text-center">
+                                <h4 class="title mb-2">Community Voice</h4>
+                                <p class="text-muted mb-40">Hear What Our Users Have to Say:</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <div class="tiny-three-item-nav-arrow">
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/1.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/01.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Steven Townsend</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>Mint Your Ideas has transformed the way I showcase my creativity. With their platform, I've been able to turn my innovative concepts into valuable digital assets. The process is seamless, and the opportunities are endless!</i></blockquote>
+                                            </div>
+
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end slide-->
+                                
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/2.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/02.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Tiffany Betancourt</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>As a collector, Mint Your Ideas has provided me with access to an incredible array of unique NFTs. The platform is easy to navigate, and I love being able to support talented creators while building my collection</i></blockquote>
+                                            </div>
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/3.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/03.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Mari Harrington</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>I've always believed in the power of ideas, and Mint Your Ideas has allowed me to monetize my vision like never before. Their platform is a game-changer for anyone looking to explore the world of NFTs and unlock the value of their creativity.</i></blockquote>
+                                            </div>
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end slide-->
+                                
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/4.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/04.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Floyd Glasgow</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>Mint Your Ideas offers a seamless and secure way to tokenize your digital creations. Their dedication to supporting artists and fostering creativity is truly commendable. I highly recommend their platform to anyone looking to make their mark in the digital art world.</i></blockquote>
+                                            </div>
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end slide-->
+                                
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/5.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/05.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Donna Schultz</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>Mint Your Ideas is more than just a marketplace – it's a community. I've had the pleasure of connecting with fellow creators and collectors from around the world, and the support and camaraderie have been invaluable. Mint Your Ideas is where inspiration meets opportunity.</i></blockquote>
+                                            </div>
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end slide-->
+                                
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/6.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/06.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Joshua Morris</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>Mint Your Ideas has been a game-changer for me as an artist. The platform provides an easy and accessible way to showcase and monetize my work. I've seen my audience grow and my earnings increase since joining </i></blockquote>
+                                            </div>
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end slide-->
+                                
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/7.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/07.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Carl Williams</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>I've been collecting NFTs for a while now, and Mint Your Ideas has quickly become one of my favorite platforms. The selection of artwork is diverse and high-quality, and I appreciate the transparency and security they provide.</i></blockquote>
+                                            </div>
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end slide-->
+                                
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/8.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/08.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Eugene Green</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>As a beginner in the world of NFTs, Mint Your Ideas has been an invaluable resource. Their user-friendly interface and helpful community have made the process of minting and trading digital assets a breeze</i></blockquote>
+                                            </div>
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end slide-->
+                                
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/9.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/09.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Julius Canale</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>Mint Your Ideas isn't just a marketplace – it's a supportive community of artists and collectors. I've made meaningful connections and collaborations through the platform, and I'm grateful for the opportunities it has provided</i></blockquote>
+                                            </div>
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end slide-->
+                                
+                                <div class="tiny-slide">
+                                    <div class="card creators creators-two creator-primary rounded-md shadow overflow-hidden my-3">
+                                        <div class="py-5" style="background: url('images/work/10.jpg');"></div>
+                                        <div class="position-relative mt-n5">
+                                            <img src="images/client/10.jpg" class="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block" alt="">
+                                            
+                                            <div class="content text-center pt-2 p-4 community-tab">
+                                                <a href="javascript:void(0)" class="text-dark h6 name d-block mb-0">Michael Williams</a>
+                                                <blockquote class="text-muted" style="margin-top:20px;"><i>I was skeptical about NFTs at first, but Mint Your Ideas has shown me the potential of this technology. Their platform empowers creators to take control of their work and monetize their talent in new and exciting ways.</i></blockquote>
+    
+                                            </div>
+                                            <div class="read-more-button">
+                                                <button class="btn btn-link read-more">
+                                                    Read More
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center d-md-none d-block">
+                                <a href="javascript:void(0)" class="btn btn-link primary text-dark">See More <i class="uil uil-arrow-right"></i></a>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+        
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Footer Start -->
+        <footer id="contact" class="bg-footer">
+            <div class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-5 col-md-6 mt-4 mt-sm-0 d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="text-light fw-normal title-dark">Join Our community</h5>
+
+                            <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-facebook-f"></i></a></li>
+                                <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-instagram"></i></a></li>
+                                <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-linkedin"></i></a></li>
+                                <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-twitter"></i></a></li>
+                                <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-skype"></i></a></li>
+                                <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-telegram"></i></a></li>
+                                <li class="list-inline-item lh-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-whatsapp"></i></a></li>
+                            </ul>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div><!--end div-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-py-60 footer-border">
+                            <div class="row">
+                                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2 d-flex flex-column align-items-center justify-content-center">
+                                    <div class="col-4">
+                                        <a href="javascript:void(0)" class="logo-footer">
+                                            <img src="./images/nftify-footer.png" alt="" style="width:100%;">
+                                        </a>
+                                    </div>  
+                                    <p class="para-desc mb-0 mt-4 text-center">Discover, trade, and collect unique digital assets at Mint Your Ideas.</p>
+                                </div>
+                                
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Discover</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Explore</a></li>
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Live Auction</a></li>
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Activities</a></li>
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Wallet</a></li>
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Creators</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                                
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Community</h5>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About Us</a></li>
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Terms & Conditions</a></li>
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Privacy Policy</a></li>
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
+                                        <li><a href="javascript:void(0)" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Contact</a></li>
+                                    </ul>
+                                </div><!--end col-->
+            
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h5 class="footer-head">Newsletter</h5>
+                                    <p class="mt-4">Sign up and receive the latest tips via email.</p>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="foot-subscribe mb-3">
+                                                    <label class="form-label">Write your email <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                        <input type="email" name="email" id="emailsubscribe" class="form-control ps-5 rounded" placeholder="Your email : " required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="d-grid">
+                                                    <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary" value="Subscribe">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end slide-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="footer-py-30 footer-bar">
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start">
+                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Mint Your Ideas. Trade with <i class="mdi mdi-heart text-danger"></i> Us </p>
+                            </div>
+                        </div><!--end col-->
+    
+                        <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <ul class="list-unstyled footer-list text-sm-end mb-0">
+                                <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot me-2">Privacy</a></li>
+                                <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot me-2">Terms</a></li>
+                                <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot me-2">Help Center</a></li>
+                                <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot">Contact</a></li>
+                            </ul>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
+        </footer><!--end footer-->  
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-pill fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- Wallet Modal -->
+        <div class="modal fade" id="modal-metamask" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">                    
+                <div class="modal-content justify-content-center border-0 shadow-md rounded-md position-relative">
+                    <div class="position-absolute top-0 start-100 translate-middle z-index-1">
+                        <button type="button" class="btn btn-icon btn-pills btn-sm btn-light btn-close opacity-10" data-bs-dismiss="modal" id="close-modal"><i class="uil uil-times fs-4 text-muted"></i></button>
+                    </div>
+
+                    <div class="modal-body p-4 text-center">
+                        <img src="images/wallet/MetaMask_Fox.svg" class="avatar avatar-md-md rounded-circle shadow-sm " alt="">
+
+                        <div class="content mt-4">
+                            <h5 class="text-danger mb-4">Error!</h5>
+
+                            <P class="text-muted">Please Download MetaMask and create your profile and wallet in MetaMask. Please click and check the details,</P>
+
+                            <a href="javascript:void(0)" class="btn btn-link primary text-primary fw-bold" target="_blank">MetaMask</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wallet Modal -->
+
+        <!-- Style switcher -->
+        <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+            <div class="content">
+                <h6 class="title text-center pt-3 mb-0 border-top">Theme Option</h6>
+                <ul class="text-center list-unstyled mb-0">
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Dark</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Light</a></li>
+                </ul>
+            </div>
+            <div class="bottom p-0">
+                <a href="javascript: void(0);" class="settings bg-white title-bg-dark shadow d-flex align-items-center justify-content-center"><i class="mdi mdi-cog mdi-24px position-absolute mdi-palette text-primary"></i></a>
+            </div>
+        </div>
+        <!-- end Style switcher -->
+        
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/tiny-slider.js "></script>
+        <script src="js/shuffle.min.js"></script>
+        <script src="js/feather.min.js"></script>
+        <script src="js/plugins.init.js"></script>
+        <script src="script.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
